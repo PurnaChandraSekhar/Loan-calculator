@@ -17,12 +17,16 @@ body {
 }
 
 .container {
-    height: 50vh;
     width: 50%;
     margin: 2rem auto;
     padding: 0 1rem;
     border: 1px solid #777;
     background-image: linear-gradient(160deg, #a18cd1, #fbc2eb );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .heading {
@@ -50,13 +54,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50%;
     justify-content: space-evenly;
+    margin: 1.5rem 0;
 }
 
-.cont-1, .cont-2 {
+.cont-1, .cont-2, .cont-3 {
     display: flex;
     align-items: center;
+    margin: .5rem 0;
 }
 
 .inp {
@@ -69,10 +74,29 @@ body {
     border: none;
     outline: none;
     padding: 1rem 1.5rem;
+    margin:1rem 0;
     border-radius: .5rem;
     cursor: pointer;
     font-family: inherit;
     font-size: 1.2rem;
     background-color: #298386;
     color: #f2f2f2;
+}
+
+.label-icon {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: .5rem 0;
+    margin-right: .5rem;
+}
+
+.result-heading{
+    align-self: center;
+    margin-bottom: .5rem;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
