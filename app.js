@@ -4,9 +4,7 @@ document.querySelector('#form').addEventListener('submit', function(e){
     
     //intially hide results
     document.querySelector('.container-2').style.display = 'none';
-    setTimeout(calculateResults, 0);
-    //now show results after 0 sec
-    document.querySelector('.container-2').style.display = 'flex';
+    calculateResults();
 
 });
 
@@ -35,20 +33,28 @@ function calculateResults() {
         monthlyPayment.value = monthly.toFixed(2);
         interest.value = (monthly*calculatedPayments).toFixed(2);
         totalPayment.value = ((monthly * calculatedPayments) - principal).toFixed(2);
+
+         //now show results after 0 sec
+         document.querySelector('.container-2').style.display = 'flex';
     } else {
         errorMessage("Please check your numbers");
+         
     }
 }
 
 //error message
 function errorMessage(msg) {
-    const div = document.createElement('div');
+     //intially hide results
+     document.querySelector('.container-2').style.display = 'none';
+    
+     const div = document.createElement('div');
     const container = document.querySelector('#form');
     const insertbefore = document.querySelector('#container-em');
     div.className = "error-msg";
     div.innerHTML = `<p>${msg}</p>`
  
     container.insertBefore(div, insertbefore);
+
     //clear error
     setTimeout(() => {
       const el = document.querySelector('.error-msg');
