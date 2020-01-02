@@ -96,7 +96,16 @@ body {
 }
 
 .container-2 {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.error-msg {
+    height: 4rem;
+    background-color: #d41919a9;
+    color: whitesmoke;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }

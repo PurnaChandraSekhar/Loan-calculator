@@ -10,8 +10,8 @@
         <div class="container">
             <h1 class="heading">Loan Calculator</h1>
             <form id="form" class="form">
-                <div class="cont-1">
-                    <label for="loan-amount" class="icon">$</label>
+                <div class="cont-1" id="container-em">
+                    <label for="loan-amount" class="icon" id="label-em">$</label>
                     <input type="number" id="loan-amount" class="inp" placeholder="Loan Amount">
                 </div>
                 <div class="cont-2">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="cont-3">
                     <label for="payment" class="icon">^</label>
-                    <input type="number" id="payment" class="payment inp" placeholder="monthly installments">
+                    <input type="number" id="payment" class="payment inp" placeholder="years to pay">
                 </div>
                 <button class="btn" type="submit">Calculate</button>
             </form>
@@ -35,12 +35,12 @@
                     <input type="number" id="monthly" class="inp" disabled >
                 </div>
                 <div class="cont-1">
-                    <label for="intrest" class="label-icon">Interest:</label>
-                    <input type="number" id="intrest" class="inp" disabled >
+                    <label for="interest" class="label-icon">Interest:</label>
+                    <input type="number" id="interest" class="inp" disabled >
                 </div>
                 <div class="cont-1">
-                    <label for="intrest" class="label-icon">Total payment:</label>
-                    <input type="number" id="intrest" class="inp" disabled>
+                    <label for="total-payment" class="label-icon">Total payment:</label>
+                    <input type="number" id="total-payment" class="inp" disabled>
                 </div>
             </div>
         </div>
